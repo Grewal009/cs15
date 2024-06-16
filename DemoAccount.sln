@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAccount", "DemoAccount\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyInjection", "PropertyInjection\PropertyInjection.csproj", "{3B2BC19A-0054-4737-825A-2F5D3D16DA34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodInjection", "MethodInjection\MethodInjection.csproj", "{A80DA434-F975-4CDD-9334-ED996B936895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{3B2BC19A-0054-4737-825A-2F5D3D16DA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B2BC19A-0054-4737-825A-2F5D3D16DA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B2BC19A-0054-4737-825A-2F5D3D16DA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80DA434-F975-4CDD-9334-ED996B936895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80DA434-F975-4CDD-9334-ED996B936895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80DA434-F975-4CDD-9334-ED996B936895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80DA434-F975-4CDD-9334-ED996B936895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
