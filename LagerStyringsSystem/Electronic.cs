@@ -18,6 +18,4 @@ public class Electronic : IProduct
         Console.WriteLine(
             $"Name:{Name}, Pris:{Price}, Guarantee in months:{_guaranteeInMonths}");
     }
-
-    
 }

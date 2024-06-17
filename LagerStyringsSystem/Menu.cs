@@ -12,12 +12,13 @@ public class Menu
         Console.WriteLine("press S to show all items");
         Console.Write("press X to exit : ");
         MenuChoice = Console.ReadLine();
+        Console.WriteLine();
     }
+
     public void Run(Warehouse warehouse)
     {
         while (true)
         {
-          
             ShowMenu();
             switch (MenuChoice)
             {
@@ -25,6 +26,7 @@ public class Menu
                     AddItem(warehouse);
                     break;
                 case "-":
+                    RemoveItem(warehouse);
                     break;
                 case "S":
                     warehouse.ShowAllItemsInWarehouse();
@@ -78,12 +80,12 @@ public class Menu
         string clothSize;
         string expiryDate;
         int warranty;
-        
+
         Console.WriteLine("enter item name: ");
         name = Console.ReadLine();
         Console.WriteLine("enter price: ");
         price = Convert.ToDouble(Console.ReadLine());
-        
+
         if (choice == 1)
         {
             Console.WriteLine("enter guarantee in months: ");
@@ -98,12 +100,27 @@ public class Menu
             Console.WriteLine("Item Added");
             return new Cloth(clothSize, name, price);
         }
-        else 
+        else
         {
             Console.WriteLine("enter expiry date: ");
             expiryDate = Console.ReadLine();
             Console.WriteLine("Item Added");
             return new FoodItem(expiryDate, name, price);
+        }
+    }
+
+    public void RemoveItem(Warehouse warehouse)
+    {
+        Console.Write("enter item id :");
+        int index = Convert.ToInt32(Console.ReadLine());
+        if (index < 1 || index >= warehouse.products.Count)
+        {
+            Console.WriteLine("wrong input!!!");
+        }
+        else
+        {
+            warehouse.products.RemoveAt(index);
+            Console.WriteLine($"item removed");
         }
     }
 }

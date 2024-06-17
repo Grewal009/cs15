@@ -19,6 +19,4 @@ public class FoodItem : IProduct
         Console.WriteLine(
             $"Name:{Name}, Pris:{Price}, Expiry date:{_expiryDate}");
     }
-
-    
 }

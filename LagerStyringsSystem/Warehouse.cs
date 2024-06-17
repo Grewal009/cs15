@@ -1,4 +1,3 @@
-
 namespace LagerStyringsSystem;
 
 public class Warehouse
@@ -20,7 +19,7 @@ public class Warehouse
         products.RemoveAt(index);
     }
 
-    public  void ShowAllItemsInWarehouse()
+    public void ShowAllItemsInWarehouse()
     {
         ShowItemsBasedOnCategory();
     }
@@ -31,36 +30,40 @@ public class Warehouse
         Console.WriteLine("Electronic Items:");
         foreach (var product in products)
         {
-            if (product.GetType()==typeof(Electronic))
+            if (product.GetType() == typeof(Electronic))
             {
                 Console.Write($"ID: {products.IndexOf(product)} -> ");
                 product.PrintInfo();
             }
         }
 
-        Console.WriteLine("---------------------------------------------------");
-        
+        Console.WriteLine(
+            "---------------------------------------------------");
+
         Console.WriteLine("Food Items:");
         foreach (var product in products)
         {
-            if (product.GetType()==typeof(FoodItem))
+            if (product.GetType() == typeof(FoodItem))
             {
                 Console.Write($"ID: {products.IndexOf(product)} -> ");
                 product.PrintInfo();
             }
         }
-        Console.WriteLine("---------------------------------------------------");
-        
+
+        Console.WriteLine(
+            "---------------------------------------------------");
+
         Console.WriteLine("Cloth Items:");
         foreach (var product in products)
         {
-            if (product.GetType()==typeof(Cloth))
+            if (product.GetType() == typeof(Cloth))
             {
                 Console.Write($"ID: {products.IndexOf(product)} -> ");
                 product.PrintInfo();
             }
         }
-        Console.WriteLine("---------------------------------------------------");
-    }
 
+        Console.WriteLine(
+            "---------------------------------------------------");
+    }
 }

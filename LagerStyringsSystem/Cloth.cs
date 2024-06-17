@@ -17,5 +17,4 @@ public class Cloth : IProduct
     {
         Console.WriteLine($"Name:{Name}, Pris:{Price}, Size:{_size}");
     }
-
 }
