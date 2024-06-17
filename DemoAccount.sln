@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodInjection", "MethodIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServerAndClient", "ChatServerAndClient\ChatServerAndClient.csproj", "{DD376F09-13DB-44EF-9187-15180CC7A8DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerStyringsSystem", "LagerStyringsSystem\LagerStyringsSystem.csproj", "{3A2991DF-0686-46AD-B01D-D1F1DC365BF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{DD376F09-13DB-44EF-9187-15180CC7A8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD376F09-13DB-44EF-9187-15180CC7A8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD376F09-13DB-44EF-9187-15180CC7A8DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2991DF-0686-46AD-B01D-D1F1DC365BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2991DF-0686-46AD-B01D-D1F1DC365BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2991DF-0686-46AD-B01D-D1F1DC365BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2991DF-0686-46AD-B01D-D1F1DC365BF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
