@@ -2,19 +2,19 @@ namespace ChatServerAndClient;
 
 public class ChatServer
 {
-    private List<ChatClient> _clients;
+    private List<IClient> _clients;
 
-    public ChatServer()
+    public ChatServer(List<IClient> client)
     {
-        _clients = new List<ChatClient>();
+        _clients = client;
     }
 
-    public void Register(ChatClient client)
+    public void Register(IClient client)
     {
         _clients.Add(client);
     }
 
-    public void Broadcast(ChatClient client, string message)
+    public void Broadcast(IClient client, string message)
     {
         foreach (var chatClient in _clients)
         {

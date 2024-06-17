@@ -1,6 +1,6 @@
 namespace ChatServerAndClient;
 
-public class ChatClient
+public class ChatClient:IClient
 {
     private string _name;
     private ChatServer _server;
@@ -9,7 +9,6 @@ public class ChatClient
     {
         _name = name;
         _server = server;
-        _server.Register(this);
     }
 
     public void Say(string message)
@@ -19,7 +18,7 @@ public class ChatClient
 
     public void Receive(string message)
     {
-        Console.WriteLine($"{_name} mottak:{message}");
+        Console.WriteLine($"{_name} mottak: {message}");
     }
 
 
