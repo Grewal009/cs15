@@ -1,4 +1,3 @@
-using System.ComponentModel;
 
 namespace LagerStyringsSystem;
 
@@ -23,11 +22,13 @@ public class Warehouse
 
     public void ShowAllItemsInWarehouse()
     {
-        
+        ShowItemsBasedOnCategory();
     }
 
-    private void ShowItemsBasedOnCategory(  )
+    private void ShowItemsBasedOnCategory()
     {
+        Console.WriteLine("Items in Warehouse:");
+        Console.WriteLine("Electronic Items:");
         foreach (var product in products)
         {
             if (product.GetType()==typeof(Electronic))
@@ -35,6 +36,10 @@ public class Warehouse
                 product.PrintInfo();
             }
         }
+
+        Console.WriteLine("---------------------------------------------------");
+        
+        Console.WriteLine("Food Items:");
         foreach (var product in products)
         {
             if (product.GetType()==typeof(FoodItem))
@@ -42,6 +47,9 @@ public class Warehouse
                 product.PrintInfo();
             }
         }
+        Console.WriteLine("---------------------------------------------------");
+        
+        Console.WriteLine("Cloth Items:");
         foreach (var product in products)
         {
             if (product.GetType()==typeof(Cloth))
@@ -49,6 +57,7 @@ public class Warehouse
                 product.PrintInfo();
             }
         }
+        Console.WriteLine("---------------------------------------------------");
     }
 
 }
