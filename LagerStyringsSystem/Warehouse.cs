@@ -20,7 +20,7 @@ public class Warehouse
         products.RemoveAt(index);
     }
 
-    public void ShowAllItemsInWarehouse()
+    public  void ShowAllItemsInWarehouse()
     {
         ShowItemsBasedOnCategory();
     }
@@ -33,6 +33,7 @@ public class Warehouse
         {
             if (product.GetType()==typeof(Electronic))
             {
+                Console.Write($"ID: {products.IndexOf(product)} -> ");
                 product.PrintInfo();
             }
         }
@@ -44,6 +45,7 @@ public class Warehouse
         {
             if (product.GetType()==typeof(FoodItem))
             {
+                Console.Write($"ID: {products.IndexOf(product)} -> ");
                 product.PrintInfo();
             }
         }
@@ -54,6 +56,7 @@ public class Warehouse
         {
             if (product.GetType()==typeof(Cloth))
             {
+                Console.Write($"ID: {products.IndexOf(product)} -> ");
                 product.PrintInfo();
             }
         }

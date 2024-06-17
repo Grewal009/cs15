@@ -19,4 +19,7 @@ warehouse.AddItem(trouser);
 warehouse.AddItem(bread);
 warehouse.AddItem(eggs);
 
-warehouse.ShowAllItemsInWarehouse();
+//warehouse.ShowAllItemsInWarehouse();
+
+Menu menu = new Menu();
+menu.Run(warehouse);
