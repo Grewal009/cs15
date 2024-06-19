@@ -27,6 +27,19 @@ public class Warehouse
     private void ShowItemsBasedOnCategory()
     {
         Console.WriteLine("Items in Warehouse:");
+
+        // to get name of class
+        /*foreach (var product in products)
+        {
+            string className = product.GetType() == typeof(Electronic)
+                ? "Electronic"
+                : product.GetType() == typeof(FoodItem)
+                    ? "FoodItem"
+                    : "Cloth";
+            Console.WriteLine(className);
+        }*/
+
+
         Console.WriteLine("Electronic Items:");
         foreach (var product in products)
         {
